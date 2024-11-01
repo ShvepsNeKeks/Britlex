@@ -4,6 +4,7 @@
   --fonr-fam: "Poppins", serif;
 
   --color-white: #fff;
+  --color-bgc-card: #F5F5F5;
   --color-firm: #263238;
   --color-gray: #8F95A5;
   --color-black: #000;
@@ -11,6 +12,10 @@
   --time-trans: .5s;
   --border-rad-small: 5px;
   --border-rad-big: 15px;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -25,14 +30,38 @@ body {
 }
 
 /* Мульти-блоки */
-.hero-btn {
+.hero-title {
+  color: #000;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 8rem;
+}
+
+.text-small {
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-style-btn {
+  text-wrap: nowrap;
+  border: 1px solid var(--color-firm);
   background-color: var(--color-firm);
+  color: var(--color-white);
+  transition: background var(--time-trans), border var(--time-trans);
+}
+
+.main-style-btn:hover {
+  background: rgba(0, 0, 0, 0.177);
+  color: var(--color-black);
 }
 
 /* Навигация */
 .nav {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   display: flex;
-  min-height: 9.37vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -42,9 +71,10 @@ body {
 }
 
 .nav__list {
-  min-width: 515px;
+  max-width: 50.1rem;
   display: flex;
   justify-content: space-between;
+  gap: 3.5rem;
 }
 
 .nav__list-item {
@@ -60,7 +90,7 @@ body {
   height: 2px;
   transition: width var(--time-trans);
   background-color: var(--color-firm);
-  
+
 }
 
 .nav__list-item:hover::after {
@@ -69,16 +99,17 @@ body {
 
 .nav__link {
   position: relative;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   line-height: normal;
+  text-wrap: nowrap;
   color: var(--color-firm);
 }
 
 .nav__btn {
-  padding: 15px 57px;
+  padding: 1.5rem 5.7rem;
   transition: background var(--time-trans);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
   text-wrap: nowrap;
   border: 1px solid var(--color-firm);
@@ -93,58 +124,125 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__text-inner {
-  padding-top: 50px;
+  position: relative;
+  max-width: 50rem;
 }
 
 .header__title {
-  margin-bottom: 40px;
-  position: relative;
-  max-width: 388px;
-  font-size: 64px;
+  margin-bottom: 4rem;
+  font-size: 6.4rem;
   font-weight: 600;
-  line-height: 80px;
+  line-height: 8rem;
   color: var(--color-black);
 }
 
 .header__title::after {
   content: url(../img/bulb-icon.svg);
   position: absolute;
-  top: 85px;
-  right: -155px;
+  min-width: 10.5rem;
+  /* aspect-ratio: 1; */
+  top: 18.4vh;
+  right: -1.81vw;
 }
 
 .header__text {
-  margin-bottom: 61px;
-  font-size: 24px;
+  margin-bottom: 6.1rem;
+  font-size: 2.4rem;
   font-weight: 400;
   line-height: normal;
   color: var(--color-gray);
 }
 
 .header__btn {
-  padding: 31px 119px;
-  max-width: 438px;
-  font-size: 36px;
+  padding: 3.1rem 11.9rem;
+  font-size: 3.6em;
   font-weight: 400;
-  text-wrap: nowrap;
   border-radius: var(--border-rad-big);
-  background-color: var(--color-firm);
-  color: var(--color-white);
-  transition: background var(--time-trans), border var(--time-trans) ;
 }
-
-.header__btn:hover {
-  background: rgba(0, 0, 0, 0.177);
-  color: var(--color-black);
-  border: 1px solid var(--color-firm);
-}
-
 
 .header__img-inner {
-  background: url(../img/img-header.svg)no-repeat center/cover;
-  min-width: 34.5vw;
-  aspect-ratio: 1;
+  max-width: 66rem;
+}
+
+.header__img {}
+
+/* Скиллы */
+.skills {
+  padding-top: 9rem;
+}
+
+.skills__title {
+  text-align: center;
+  margin-bottom: 9.9rem;
+}
+
+.skills__grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "Speaking Writing Reading"
+    "Speaking Listening Listening";
+}
+
+.skills__grid-item {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bgc-card);
+}
+
+.skills__grid-item:nth-child(1) {
+  grid-area: Speaking;
+}
+
+.skills__grid-item:nth-child(2) {
+  grid-area: Writing;
+  align-items: end;
+}
+
+.skills__grid-item:nth-child(3) {
+  grid-area: Reading;
+}
+
+.skills__grid-item:nth-child(4) {
+  grid-area: Listening;
+  flex-direction: row-reverse;
+}
+
+.skills__img-inner {
+  max-width: 390px;
+}
+
+.skills__img {}
+
+.skills__title-card {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 8rem;
+  color: var(--color-firm);
+}
+
+.skills__card-inner {}
+
+.skills__text {
+  margin-bottom: 3.5rem;
+}
+
+.skills__card-text-inden {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+
+.skills__btn {
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: var(--border-rad-small);
+  color: var(--color-white);
+  background-color: var(--color-firm);
 }

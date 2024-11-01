@@ -1,0 +1,58 @@
+:root {
+  --pg-mob-cont: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .main-container {
+    padding-left: var(--pg-mob-cont);
+    padding-right: var(--pg-mob-cont);
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 35%;
+  }
+
+  .nav {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 40%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__title::after {
+    display: none;
+  }
+
+}
