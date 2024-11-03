@@ -171,7 +171,6 @@ body {
 /* Скиллы */
 .skills {
   padding-top: 9rem;
-  padding-bottom: 9rem;
 }
 
 .skills__title {
@@ -215,12 +214,6 @@ body {
   flex-direction: row-reverse;
 }
 
-.skills__img {
-}
-
-.skills__img-inner {
-}
-
 .skills__title-card {
   font-size: 3rem;
   font-style: normal;
@@ -230,11 +223,11 @@ body {
 }
 
 .skills__card-inner {
+  max-width: 36rem;
 }
 
 .skills__text {
   margin-bottom: 3.5rem;
-  max-width: 36rem;
 }
 
 .skills__card-text-inden {
@@ -249,4 +242,45 @@ body {
   border-radius: var(--border-rad-small);
   color: var(--color-white);
   background-color: var(--color-firm);
+}
+
+/* О компании */
+.about {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text-inner {
+  padding-top: 3rem;
+  max-width: 63.5rem;
+}
+
+.about__title {
+  margin-bottom: 2.5rem;
+}
+
+.about__text {
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.about__quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__quantity-inner {
+  text-align: center;
+}
+
+.about__subtitle {
+  position: relative;
+  color: var(--color-firm);
+}
+
+.about__img-inner {
+  min-width: 50rem;
+  aspect-ratio: 1;
 }
