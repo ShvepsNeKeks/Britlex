@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 575px) {
   html {
-    font-size: 40%;
+    font-size: 35%;
   }
 
   .nav {
@@ -55,4 +55,27 @@
     display: none;
   }
 
+  .skills__grid-container {
+    grid-template-areas: 
+    "Speaking Writing"
+    "Reading Listening";
+  }
+
+  .skills__grid-item:nth-child(2) {
+    align-items: flex-start;
+  }
+
+  .skills__grid-item:nth-child(4) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .skills__grid-container {
+    grid-template-areas: 
+    "Speaking"
+    "Reading"
+    "Writing"
+    "Listening";
+  }
 }

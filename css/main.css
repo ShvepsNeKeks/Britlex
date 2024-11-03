@@ -168,11 +168,10 @@ body {
   max-width: 66rem;
 }
 
-.header__img {}
-
 /* Скиллы */
 .skills {
   padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .skills__title {
@@ -192,11 +191,14 @@ body {
   padding: 4rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-rad-big);
   background-color: var(--color-bgc-card);
 }
 
 .skills__grid-item:nth-child(1) {
   grid-area: Speaking;
+  justify-content: center;
 }
 
 .skills__grid-item:nth-child(2) {
@@ -213,11 +215,11 @@ body {
   flex-direction: row-reverse;
 }
 
-.skills__img-inner {
-  max-width: 390px;
+.skills__img {
 }
 
-.skills__img {}
+.skills__img-inner {
+}
 
 .skills__title-card {
   font-size: 3rem;
@@ -227,10 +229,12 @@ body {
   color: var(--color-firm);
 }
 
-.skills__card-inner {}
+.skills__card-inner {
+}
 
 .skills__text {
   margin-bottom: 3.5rem;
+  max-width: 36rem;
 }
 
 .skills__card-text-inden {
