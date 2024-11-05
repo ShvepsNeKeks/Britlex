@@ -13,6 +13,10 @@
     padding-right: var(--pg-mob-cont);
   }
 
+  .pricing__inner {
+    gap: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 990px) {
@@ -32,6 +36,11 @@
 
   .nav {
     gap: 2rem;
+  }
+
+  .pricing__inner {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

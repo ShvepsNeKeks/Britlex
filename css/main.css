@@ -8,6 +8,7 @@
   --color-firm: #263238;
   --color-gray: #8F95A5;
   --color-black: #000;
+  --lable-pric-color: #EEEEEE;
 
   --time-trans: .5s;
   --border-rad-small: 5px;
@@ -42,6 +43,13 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: normal;
+}
+
+.title-card {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color-firm);
 }
 
 .main-style-btn {
@@ -215,11 +223,7 @@ body {
 }
 
 .skills__title-card {
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 600;
   line-height: 8rem;
-  color: var(--color-firm);
 }
 
 .skills__card-inner {
@@ -247,7 +251,6 @@ body {
 /* О компании */
 .about {
   padding-top: 16rem;
-  padding-bottom: 16rem;
   display: flex;
   justify-content: space-between;
 }
@@ -283,4 +286,63 @@ body {
 .about__img-inner {
   min-width: 50rem;
   aspect-ratio: 1;
+}
+
+/* Цены  */
+.pricing {
+  padding-top: 19rem;
+  padding-bottom: 20rem;
+}
+
+.pricing__title {
+  margin-bottom: 10rem;
+  text-align: center; 
+}
+
+.pricing__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 38rem;
+  min-height: 50rem;
+}
+
+.pricing__img-inner {
+  min-width: 100%;
+}
+
+.pricing__img {
+  max-height: 25rem;
+  object-fit: contain;
+}
+
+.pricing__item-title {
+  text-wrap: nowrap;
+}
+
+.pricing__label {
+  padding: .5rem 1.8rem;
+  position: relative;
+  max-width: 30rem;
+  font-size: 3rem;
+  font-weight: 400;
+  border-radius: var(--border-rad-small);
+  background-color: var(--lable-pric-color);
+  color: var(--color-firm);
+}
+
+.pricing__label::after {
+  content: "per month";
+  position: absolute;
+  top: 50%;
+  margin-left: .8rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-gray);
 }
