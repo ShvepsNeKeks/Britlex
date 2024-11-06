@@ -42,6 +42,12 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -85,6 +91,15 @@
   .about {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .contact__form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact__btn, .contact__email {
+    min-width: 85%;
   }
 }
 

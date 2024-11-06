@@ -291,12 +291,11 @@ body {
 /* Цены  */
 .pricing {
   padding-top: 19rem;
-  padding-bottom: 20rem;
 }
 
 .pricing__title {
   margin-bottom: 10rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .pricing__inner {
@@ -343,6 +342,84 @@ body {
   margin-left: .8rem;
   transform: translateY(-50%);
   font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
+/* Связаться с нами*/
+.contact {
+  padding-top: 25rem;
+  padding-bottom: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.contact__img-inner {
+  max-width: 48rem;
+}
+
+.contact__text-inner {
+  padding-top: 3.5rem;
+  max-width: 72.6rem;
+}
+
+.contact__title {
+  margin-bottom: 4rem;
+}
+
+.contact__text {
+  margin-bottom: 5.5rem;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact__email {
+  padding: 3rem;
+  min-width: 30vw;
+  font-size: 1.6rem;
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-rad-big);
+}
+
+::placeholder {
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.contact__btn {
+  padding: 2.5rem 8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: var(--border-rad-small);
+  color: var(--color-white);
+}
+
+.contact__label {
+  display: none;
+}
+
+/* Подвал */
+.footer {
+  padding-top: 3rem;
+  min-height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__link {
+  display: inline-block;
+  max-width: 11rem;
+}
+
+.footer__copy {
+  font-size: 2.4rem;
   font-weight: 400;
   color: var(--color-gray);
 }
